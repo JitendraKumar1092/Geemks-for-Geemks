@@ -88,7 +88,7 @@ class Solution{
             int mid = (left + right) / 2;
             // Get the price of the chocolate at the middle index.
             int price = shop.get(mid);
-            // If the price is higher than the remaining money, search in the lower half.
+           
             if (price > k) {
                 right = mid - 1;
             // Otherwise, update the maximum price found so far and search in the upper half.
@@ -97,7 +97,7 @@ class Solution{
                 left = mid + 1;
             }
         }
-        // If the maximum price is 0, break the loop since there are no chocolates that the geek can afford.
+       
         if (maxPrice == 0) {
             break;
         }
